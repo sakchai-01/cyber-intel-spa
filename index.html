@@ -585,6 +585,7 @@
         <ul class="nav-links">
             <li><a href="#home" class="nav-item active" onclick="navigate('home')">หน้าหลัก</a></li>
             <li><a href="#about" class="nav-item" onclick="navigate('about')">เกี่ยวกับโครงการ</a></li>
+            <li><a href="#impact" class="nav-item" onclick="navigate('impact')">ประโยชน์และผลกระทบ</li>a></li>
             <li><a href="#ai-feature" class="nav-item" onclick="navigate('ai-feature')">ฟีเจอร์ AI</a></li>
             <li><a href="#tools" class="nav-item" onclick="navigate('tools')">เครื่องมือความปลอดภัย</a></li>
             <li><a href="#tech-stack" class="nav-item" onclick="navigate('tech-stack')">เทคโนโลยีที่ใช้</a></li>
@@ -645,6 +646,48 @@
                 <p class="card-text">สร้างในรูปแบบ Single Page Application (SPA) ทั้งหมด
                     เพื่อให้การนำทางทำงานได้โดยไม่มีความหน่วง ใช้งานทรัพยากรน้อยที่สุด
                     และเข้าถึงได้ทันทีในทุกอุปกรณ์เว็บ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" style="background: radial-gradient(circle at center, rgba(0, 240, 255, 0.03) 0%, transparent 80%);">
+        <div class="section-header">
+            <h2 class="section-title">โครงการนี้ช่วยอะไรได้บ้าง?</h2>
+            <p class="section-subtitle">ผลกระทบเชิงบวกและคุณค่าที่เราส่งมอบให้กับผู้ใช้งานและองค์กร</p>
+        </div>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 4rem; max-width: 1200px; margin: 0 auto; align-items: center;">
+            <div style="flex: 1; min-width: 300px; text-align: left;">
+                <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--accent-primary);">ยกระดับความปลอดภัยสู่มาตรฐานใหม่</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8;">
+                    แพลตฟอร์มของเราถูกออกแบบมาเพื่อแก้ปัญหา <strong>"ความล่าช้า"</strong> และ <strong>"ความแม่นยำ"</strong> ในการตรวจจับภัยคุกคามทางไซเบอร์ที่มักจะพบในระบบรักษาความปลอดภัยยุคเก่า
+                </p>
+                <ul style="list-style: none; color: var(--text-primary); margin-bottom: 2rem;">
+                    <li style="margin-bottom: 1.2rem; display: flex; align-items: flex-start; gap: 12px;">
+                        <i class="fa-solid fa-check-circle" style="color: var(--green-safe); font-size: 1.2rem; margin-top: 4px;"></i> 
+                        <div><strong style="color: white;">ลดอัตราการถูกหลอกลวง (Phishing):</strong><br><span style="color: var(--text-secondary); font-size: 0.95rem;">สกัดกั้นหน้าเว็บปลอมได้อย่างแม่นยำก่อนที่ผู้ใช้จะหลงป้อนรหัสผ่านหรือข้อมูลทางการเงิน</span></div>
+                    </li>
+                    <li style="margin-bottom: 1.2rem; display: flex; align-items: flex-start; gap: 12px;">
+                        <i class="fa-solid fa-check-circle" style="color: var(--green-safe); font-size: 1.2rem; margin-top: 4px;"></i> 
+                        <div><strong style="color: white;">ปกป้องชื่อเสียงแบรนด์องค์กร:</strong><br><span style="color: var(--text-secondary); font-size: 0.95rem;">ตรวจจับการเลียนแบบหน้าเว็บและการปลอมแปลงโลโก้แบบเรียลไทม์เพื่อลดความเสียหายจากสปอยเลอร์</span></div>
+                    </li>
+                    <li style="margin-bottom: 1.2rem; display: flex; align-items: flex-start; gap: 12px;">
+                        <i class="fa-solid fa-check-circle" style="color: var(--green-safe); font-size: 1.2rem; margin-top: 4px;"></i> 
+                        <div><strong style="color: white;">ยับยั้งภัยด่วนได้แบบอัตโนมัติ:</strong><br><span style="color: var(--text-secondary); font-size: 0.95rem;">วิเคราะห์ความเสี่ยงและแจ้งเตือนพฤติกรรมผิดปกติอย่างชาญฉลาด ไม่ต้องรอแอดมินมาตรวจสอบทีละรายการ</span></div>
+                    </li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <button class="btn btn-secondary" style="border-radius: 50px;" onclick="navigate('ai-feature')">ดูเทคโนโลยีเบื้องหลัง <i class="fa-solid fa-arrow-down"></i></button>
+                </div>
+            </div>
+            
+            <div style="flex: 1; min-width: 300px; position: relative;">
+                <!-- Decorative effects -->
+                <div style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; background: var(--gradient-primary); filter: blur(60px); opacity: 0.3; border-radius: 50%; z-index: -1;"></div>
+                
+                <!-- The Illustration Image -->
+                <img src="assets/impact.png" alt="AI Cybersecurity Impact Illustration" style="width: 100%; border-radius: 20px; border: 1px solid var(--border-color); box-shadow: 0 10px 40px rgba(0,240,255,0.15); transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
             </div>
         </div>
     </section>
